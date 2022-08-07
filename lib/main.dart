@@ -11,7 +11,7 @@ Future<void> main() async {
   final NotificationService notificationService = NotificationService();
   await notificationService.init();
   // ! Trouver un autre moyen d'utiliser notification service partout dans l'application
-  // Plutôt que par un passage en paramètre mais plutôt avec provider
+  // ! Plutôt que par un passage en paramètre mais plutôt avec provider
   runApp(MyApp(notificationService: notificationService));
 }
 
